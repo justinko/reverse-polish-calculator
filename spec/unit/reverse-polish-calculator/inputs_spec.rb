@@ -56,6 +56,11 @@ module ReversePolishCalculator
       end
     end
     
+    describe '#inspect' do
+      before { add_inputs('1 2') }
+      specify { inputs.inspect.should eq('1.0, 2.0') }
+    end
+    
     def add_inputs(expression)
       expression.split.each do |input|
         inputs << Input.new(input)

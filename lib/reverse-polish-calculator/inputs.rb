@@ -69,5 +69,9 @@ module ReversePolishCalculator
       delete_if {|input| @trash.include?(input) }
     end
     
+    def inspect
+      map(&:to_f).join(', ')
+    end
+    
   end
 end

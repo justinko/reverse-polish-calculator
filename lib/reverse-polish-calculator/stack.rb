@@ -24,7 +24,7 @@ module ReversePolishCalculator
     end
     
     def output
-      Output.add "stack: #{@inputs.map(&:to_f).join(', ')}"
+      Output.add "stack: #{@inputs.inspect}"
       Output.add "aggregate: #{@aggregate}"
       Output.display
       Output.clear
