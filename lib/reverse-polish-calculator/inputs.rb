@@ -41,6 +41,8 @@ module ReversePolishCalculator
         self.swapped = true
         operand_2 = operand_1
         operand_1 = @aggregate
+      else
+        self.swapped = false
       end
 
       @operands.push(if @swapped
